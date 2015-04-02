@@ -29,3 +29,6 @@ bower_components/
 
 # Server Keys/Certificates
 *.pem
+
+server/balance/
+server/rebalance/

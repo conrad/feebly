@@ -4,8 +4,7 @@
   "description": "A fake & rudimentary implementation of Weebly",
   "author": "Matt Conrad <mmconrad@gmail.com>",
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "bower install && gulp deploy"
+    "start": "node index.js"
   },
   "main": "",
   "repository": {
@@ -13,7 +12,10 @@
     "url": "https://github.com/conrad/feebly"
   },
   "dependencies": {
+    "bluebird": "^2.9.24",
     "express": "^4.12.3",
+    "googleapis": "^2.0.2",
+    "jwt-simple": "^0.2.0",
     "morgan": "^1.5.2"
   },
   "devDependencies": {
