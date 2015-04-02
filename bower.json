@@ -1,0 +1,17 @@
+{
+  "name": "Feebly",
+  "version": "0.0.1",
+  "authors": [
+    "Matt Conrad <mmconrad@gmail.com>"
+  ],
+  "description": "A rudimentary mock-up of the Weebly site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
+

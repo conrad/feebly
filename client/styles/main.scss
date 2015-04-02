@@ -1,0 +1,284 @@
+// $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+
+// bower:scss
+// @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$header-height: 40px;
+$sidebar-width: 200px;
+// Color Palette
+$header-blue: #518dca;
+$dark-blue: #2c3e50;
+$sidebar-header-gray: #4f657b;
+$sidebar-text-gray: #92a8be;
+$page-gray: #97aabc;  // #96adc4
+$canvas-gray: #eff2f5;
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../assets/font/ProximaNova-Light.otf'); // format('opentype');
+}
+@font-face {
+  font-family: 'ProximaNova-LightIt';
+  src: url('../assets/font/ProximaNova-LightIt.otf'); 
+}
+@font-face {
+  font-family: 'ProximaNova-Reg';
+  src: url('../assets/font/ProximaNova-Reg.otf'); 
+}
+@font-face {
+  font-family: 'ProximaNova-RegIt';
+  src: url('../assets/font/ProximaNova-RegIt.otf'); 
+}
+@font-face {
+  font-family: 'ProximaNova-Sbold';
+  src: url('../assets/font/ProximaNova-Sbold.otf'); 
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../assets/font/ProximaNova-Bold.otf'); 
+}
+@font-face {
+  font-family: 'VAGRoundedStd-Bold';
+  src: url('../assets/font/ProximaNova-Bold.otf'); 
+}
+@font-face {
+  font-family: 'VAGRoundedStd-Light';
+  src: url('../assets/font/ProximaNova-Light.otf'); 
+}
+@font-face {
+  font-family: 'VAGRoundedStd-Thin';
+  src: url('../assets/font/ProximaNova-Thin.otf'); 
+}
+$font-fallbacks: Helvetica, sans-serif; 
+$font-stack-reg: ProximaNovaReg, $font-fallbacks;
+
+html {
+  // margin: -8px;
+}
+
+.browsehappy {
+     margin: 0.2em 0;
+     background: #ccc;
+     color: #000;
+     padding: 0.2em 0;
+ }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.header,
+.footer {
+    // padding: 15px 35px;
+}
+
+.header {
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    height: $header-height;
+    background-color: $header-blue;
+}
+
+.logo {
+  margin-left: 25px;
+}
+
+.sidebar {
+  // Note the shadow along the entire right side of the sidebar
+  position: fixed;
+  // top: $header-height;
+  width: $sidebar-width;
+  height: 100%;     // 100% - $header-height ...?
+  background-color: $dark-blue;
+  color: $sidebar-text-gray;
+  font-family: $font-stack-reg;
+  font-size: 10px;
+}
+
+.sidebar-header {
+  padding: 7px 0px;
+  text-align: center;
+  background-color: $sidebar-header-gray;
+  border-top: 1.5px solid #000000;
+  border-bottom: 1.5px solid #000000;
+  clear: both;
+}
+
+.templates {
+  padding: 20px 20px 6px;
+}
+
+.page-stack {
+  margin: 5px;
+  padding: 9px 15px 8px;
+  background-color: $header-blue;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.page-stack:hover{}
+// .page-stack:click{}
+
+.new-page {
+  margin: 5px;
+  padding: 7.5px 15px 6.5px;
+  width: 117px;
+  color: $sidebar-text-gray;
+  background-color: $dark-blue;
+  border-radius: 2px;
+  border: 2px solid $sidebar-text-gray;
+  font-family: $font-stack-reg;
+  font-size: 10px;
+  cursor: default;
+}
+
+.new-page:hover{}
+
+.elements {
+  // display:inline;
+}
+
+.element {
+  float: left;
+  width: ($sidebar-width / 2) - 2;
+  text-align: center;
+  cursor: move;
+  border: 1px solid #000000;
+}
+
+.element-text {
+  margin: 8px;
+}
+
+.element-image {
+  margin: 13px auto 0px;
+  height: 54px;
+  width: 54px;
+  background-image: url('../assets/sprites/Element-Icons.png');
+}
+
+#title-image {
+  background-position: -8px -8px;
+}
+#text-image {
+  background-position: -62px -8px;
+}
+#image-image {  
+  background-position: -116px -8px;
+}
+#nav-image {
+  background-position: -170px -8px;
+}
+
+.settings {}
+
+.setting {
+  border-bottom: 1px solid #000000;
+  padding: 14px 25px;
+}
+
+.setting-text {
+  display: inline;
+}
+
+.setting-switch {
+  // display:inline;
+  float: right;
+  margin-top: -5px;
+  width: 51px;
+  height: 23px;
+  background-image: url('../assets/sprites/Toggle-Switch.png');
+  background-position: -6px -7px;
+}
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.icon {
+  margin: 0 4px;
+}
+
+// .container-narrow > hr {
+//     margin: 30px 0;
+// }
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    margin: 10px auto;
+    padding: 12px 55px;
+    width: 510px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+
+// #stage {
+//   margin: 0 auto;
+//   width: 630px;
+//   height: 270px;
+// }
+
+
+.image {
+  // vertical-align: middle;
+  // display: table-cell;  
+  // margin-top: 3px;
+}
+
+
+.shadowed{
+  -webkit-box-shadow: 5px 6px #aaa; 
+  -moz-box-shadow   : 5px 6px #aaa;
+  box-shadow        : 5px 6px #aaa;
+}
+    /*all shadow declarations for various browsers*/ 
+    // -o-
+    // -webkit-
+    // -moz-
+    // -ms-
+    // box-shadow
+
+
+
+/* Responsive: Portrait tablets and up */
+// @media screen and (min-width: 768px) {
+//     .container {
+//         max-width: 730px;
+//     }
+
+//     /* Remove the padding we set earlier */
+//     .header,
+//     .marketing,
+//     .footer {
+//         padding-left: 0;
+//         padding-right: 0;
+//     }
+
+//     /* Space out the masthead */
+//     .header {
+//         margin-bottom: 30px;
+//     }
+
+//     /* Remove the bottom border on the jumbotron for visual effect */
+//     .jumbotron {
+//         border-bottom: 0;
+//     }
+// }
+
