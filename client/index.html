@@ -26,8 +26,10 @@
             <div class="sidebar-header">TEMPLATES</div>
             <div class="sidebar-section templates">
                 <div class="page-stack">PAGE</div>
-                <input class="new-page" type="text" placeholder="ADD NEW PAGE" />
-                    <img class="add-button">
+                <div class="new-page">
+                    <input class="new-page-input" type="text" placeholder="ADD NEW PAGE" />
+                    <div class="new-page-button"></div>
+                </div>
             </div>
 
             <div class="sidebar-header">ELEMENTS</div>
@@ -53,8 +55,7 @@
             <div class="sidebar-header">SETTINGS</div>
             <div class="sidebar-section settings">
                 <div class="setting">
-                    <p class="setting-text">
-                    SITE GRID</p>
+                    <p class="setting-text">SITE GRID</p>
                     <div class="setting-switch"></div>
                 </div>
             </div>
@@ -62,17 +63,26 @@
 
         <div class="canvas">
             <div class="pages">
-                <div class="page"></div>
+                <div class="page">PAGE</div>
             </div>
 
             <div class="elements-added">
-                <!-- Go into  -->
+                <div class="image-banner">
+                    <div class="image-banner-content">
+                        <div class="image-icon"></div>
+                        <div class="add-image-box">
+                            <div class="add-image-text">ADD IMAGE</div>
+                            <div class="add-image-icon"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
+
         <!-- <footer></footer> -->
-        <div class="footer">
+      <!--   <div class="footer">
             <p>Project by Matt Conrad 
                 <div class="icons pull-right">
                     <a class="icon" href="https://www.linkedin.com/in/matthewmconrad" target="_blank">
@@ -88,7 +98,7 @@
             </p>
             <p>Built using HTML5/CSS3, jQuery, Bootstrap, & Sass</p>
         </div>
-
+ -->
 
     <script src="scripts/main.js"></script>
 </body>

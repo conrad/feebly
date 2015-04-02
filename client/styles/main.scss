@@ -7,13 +7,17 @@
 
 $header-height: 40px;
 $sidebar-width: 200px;
+$canvas-padding: 40px;
+
 // Color Palette
 $header-blue: #518dca;
 $dark-blue: #2c3e50;
 $sidebar-header-gray: #4f657b;
-$sidebar-text-gray: #92a8be;
-$page-gray: #97aabc;  // #96adc4
+$sidebar-text-gray: #858f9a; // #92a8be;
 $canvas-gray: #eff2f5;
+$page-gray: #97aabc;  // #96adc4
+// $border-gray: #bbbbbb;
+$white: #ffffff;
 
 @font-face {
   font-family: 'ProximaNova-Light';
@@ -130,8 +134,8 @@ body {
 
 .new-page {
   margin: 5px;
-  padding: 7.5px 15px 6.5px;
-  width: 117px;
+  padding: 4.5px 7px 5.5px 5px; 
+  width: 135px;
   color: $sidebar-text-gray;
   background-color: $dark-blue;
   border-radius: 2px;
@@ -141,11 +145,36 @@ body {
   cursor: default;
 }
 
-.new-page:hover{}
 
-.elements {
-  // display:inline;
+.new-page-input {
+  border: none;
+  margin: 0;
+  padding-top: 4px;
+  color: $sidebar-text-gray;
+  background-color: $dark-blue;
+  width: 90px;
+  font-size: 10px;
+  font-family: $font-stack-reg;
+  // display: inline;
 }
+
+.new-page-button {
+  width: 18px;
+  height: 16px;
+  float: right;
+  background-image: url('../assets/sprites/Add-Delete-Edit-Icons.png');
+  background-position: -10px -12px; // -3px -12px;
+}
+
+.new-page:hover{
+  // use JS to make add button light up
+}
+
+.new-page-input:focus {
+    outline: 0;
+}
+
+.elements {}
 
 .element {
   float: left;
@@ -200,6 +229,73 @@ body {
   background-position: -6px -7px;
 }
 
+.canvas {
+  margin-left: $sidebar-width;
+  padding: 40px 50px;
+}
+
+.pages {
+  // margin-top: 0px 20px 0px 40px;
+  // height: 
+  padding-bottom: 10px;
+}
+
+.page {
+  display: inline;
+  margin-right: 12px;
+  padding: 8px 32px;
+  border-radius: 4px;
+  border: 2px solid $sidebar-text-gray;
+  text-align: center;
+  background-color: $page-gray;
+  color: $white;
+  font-family: $font-stack-reg;
+  font-size: 10px;
+}
+
+.page.selected {
+  background-color: $white;
+  color: $sidebar-text-gray;
+}
+
+.elements-added {}
+.image-banner {
+  background-color: $canvas-gray;
+  border-radius: 4px;
+  border: 2px solid $sidebar-text-gray;
+  margin: 20px 0px;
+  padding: 100px 0px;
+}
+.image-banner-content {
+  margin: 0 auto;
+  padding: 1px;
+  width: 110px;
+  height: 115px;
+}
+.image-icon {
+  height: 114px;
+  width: 107px;
+  background-image: url('../assets/sprites/Image-Placeholder.png');
+  background-position: -15px -15px;
+}
+.add-image-text {
+  margin: 2px 0px 0px 11px;
+  float: left;
+  font-family: $font-stack-reg;
+  font-size: 12px;
+  // color: $sidebar-text-gray;
+  color: #a7a9ab;
+  text-align: center;
+}
+
+.add-image-icon {
+  width: 20px;
+  height: 18px;
+  float: right;
+  background-image: url('../assets/sprites/Add-Delete-Edit-Icons.png');
+  background-position: -13px -50px; // -3px -12px;
+}
+
 .footer {
     padding-top: 19px;
     color: #777;
@@ -227,13 +323,6 @@ body {
     font-size: 21px;
     padding: 14px 24px;
 }
-
-
-// #stage {
-//   margin: 0 auto;
-//   width: 630px;
-//   height: 270px;
-// }
 
 
 .image {
